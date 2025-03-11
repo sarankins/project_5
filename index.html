@@ -7,56 +7,97 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Monoton&display=swap" rel="stylesheet">
   <style>
    
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #121212; 
+      background-color: #121212;
       color: #ffffff; 
     }
+
     header {
-      background-color: #333;
-      color: rgb(84, 180, 116);
       padding: 10px 0;
       text-align: center;
     }
+
     h1 {
+      color: rgb(251, 41, 67);
       font-family: 'Caveat', sans-serif;
       font-size: 2.5rem;
       margin: 0;
     }
-    footer {
-      background-color: #333;
+
+    header div {
       color: white;
-      text-align: center;
-      padding: 10px 0;
-      font-size: 0.9rem;
     }
-    iframe {
-      max-width: 100%;
-      height: auto;
-      border: none;
-    }
+
     section {
       margin: 20px;
       padding: 20px;
-      background-color: #1a1a1a;
       border-radius: 8px;
+      border-color: rgb(226,226,226);
+      border-style: solid;
+      border-width: 2px;
+      background: rgb(82,97,97);
+      background: linear-gradient(0deg, rgba(82,97,97,1) 0%, rgba(251,41,67,1) 100%);
+      color: #000000;
+      display: flex;
+      flex-direction: row;
     }
+
+    section div {
+      flex: 1;
+      margin: 1vw;
+    }
+
+    .left {
+      padding: 10px;
+    }
+
+    .right {
+      text-align: center;
+    }
+
     h2 {
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-size: 2rem;
       margin-bottom: 10px;
+      font-family: 'Monoton', sans-serif;
+      font-weight: 100;
     }
+
     p {
       font-size: 1rem;
       line-height: 1.6;
     }
+
     iframe {
-   max-width: 100%;
+      max-width: 100%;
+      width: 560px; 
+      height: 315px;
+    }
+
+    cite {
+      font-size: small;
+    }
+
+    hr {
+      border-style: dashed;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2px 0 20px 0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: rgb(251, 41, 67);
     }
 
   </style>
@@ -64,34 +105,51 @@
 <body>
 
   <header>
-    <h1>Daft Punk's Greatest Hits</h1>
+    <h1>Daft Punk</h1>
+    <div>Greatest Hits</div>
   </header>
 
   <main>
     <section>
-      <h2>One More Time</h2>
-      <p>One of Daft Punk's most recognizable tracks, and one of my favorite electronic tracks with it's infectious melody. Listening to this makes you want to get up and dance! This house-driven melody has become a staple in clubs worldwide. </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/FGBhQbmPwH8?si=Sv2SsqUo82QTEC6n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Source: <a href="https://www.youtube.com/watch?v=EDlToWvXltg" target="_blank">One More Time - Daft Punk</a></p>
+      <div class="left">
+        <h2>One More Time</h2>
+        <hr>
+        <p>One of Daft Punk's most recognizable tracks, and one of my favorite electronic tracks with it's infectious melody. Listening to this makes you want to get up and dance! This house-driven melody has become a staple in clubs worldwide. </p>
+      </div>
+      <div class="right">
+        <iframe src="https://www.youtube.com/embed/FGBhQbmPwH8?si=Sv2SsqUo82QTEC6n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+        <cite>Daft Punk (2009). Daft Punk - One More Time (Official Video). [online video].<br>Available at: <a href="https://www.youtube.com/watch?v=FGBhQbmPwH8">YouTube</a>. Accessed: 9 March 2025</cite>
+      </div>
     </section>
 
     <section>
-      <h2>Around the World</h2>
-      <p>This song features an energetic and unique music video with repetitive choreography that complements the hypnotic rhythm of the song. The song’s funky bassline gives it a futuristic and almost robotic quality, reflecting Daft Punk’s signature style. </p>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/K0HSD_i2DvA?si=PSdtNH_fqCfGKvM7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Source: <a href="https://www.youtube.com/watch?v=F3z3vYwwzA4" target="_blank">Around the World - Daft Punk</a></p>
+      <div class="left">
+        <h2>Around the World</h2>
+        <hr>
+        <p>This song features an energetic and unique music video with repetitive choreography that complements the hypnotic rhythm of the song. The song’s funky bassline gives it a futuristic and almost robotic quality, reflecting Daft Punk’s signature style. </p>
+      </div>
+      <div class="right">
+        <iframe src="https://www.youtube.com/embed/K0HSD_i2DvA?si=PSdtNH_fqCfGKvM7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+        <cite>Daft Punk (2021). Daft Punk - Around The World (Official Music Video Remastered). [online video].<br>Available at: <a href="https://www.youtube.com/watch?v=K0HSD_i2DvA">YouTube</a>. Accessed: 9 March 2025</cite>
+      </div>
     </section>
 
     <section>
-      <h2>Lose Yourself to Dance</h2>
-      <p>Featuring a funky groove, this song is a fantastic collaboration with Pharrell Williams. Love how the video is shot in a circular motion around one small stage of irridescent outfits and instruments. Loosing yourself to dance is the best way to enjoy some good music. </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/NF-kLy44Hls?si=iWKAW5o-XeGUSN6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Source: <a href="https://www.youtube.com/watch?v=5wf-gz0L7os" target="_blank">Lose Yourself to Dance - Daft Punk</a></p>
+      <div class="left">
+        <h2>Lose Yourself to Dance</h2>
+        <hr>
+        <p>Featuring a funky groove, this song is a fantastic collaboration with Pharrell Williams. Love how the video is shot in a circular motion around one small stage of irridescent outfits and instruments. Losing yourself to dance is the best way to enjoy some good music. </p>
+      </div>
+      <div class="right">
+        <iframe src="https://www.youtube.com/embed/NF-kLy44Hls?si=iWKAW5o-XeGUSN6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+        <cite>Daft Punk (2013). Daft Punk - Lose Yourself to Dance (Official Version). [online video].<br>Available at: <a href="https://www.youtube.com/watch?v=NF-kLy44Hls">YouTube</a>. Accessed: 9 March 2025</cite>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Sarah Smith. All rights reserved.</p>
+    <cite>Fonts used: <a href="https://fonts.google.com/specimen/Caveat">Caveat</a> and <a href="https://fonts.google.com/specimen/Monoton">Monoton</a></cite>
   </footer>
 
 </body>
